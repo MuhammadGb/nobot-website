@@ -1,0 +1,158 @@
+header {
+  background-color: #333333;
+  color: white;  
+  height: 150px;
+  padding: 1.5em;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(180deg,#edf1f2 0,rgba(237,241,242,0)), linear-gradient(90deg,rgba(216,220,224,0) 0,#d8dce0 30%,#d8dce0 50%,#d8dce0 70%,rgba(216,220,224,0));
+  min-height: 100%;
+}
+
+#ngs-logo {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  #ngs-logo {
+    float: left;
+    margin-right: 1em;
+  }
+}
+
+.title {
+  color: white;
+  display: none;
+  padding-top: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    display: block;
+  }
+}
+
+.subtitle {
+  color: #8cc84c;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    display: block;
+  }
+}
+
+hr {
+  background-color: #333333;
+}
+
+.column img {
+  border: 4px solid #333333;
+  transition: all .2s ease-in-out;
+  width: 100%;
+}
+
+.column > h1 {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .column img {
+    max-width: 360px;
+  }
+  .column h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .column img {
+    max-width: 468px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .column img {
+    max-width: 560px;
+  }
+}
+
+.column img:hover {
+  transform: scale(1.05);
+}
+
+.overlay-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-background .is-hidden {
+  display: none;
+}
+
+.overlay-background {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay iframe {
+  border: 0;
+  height: 100%;
+  max-height: 582px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    width: 768px;
+    height: 320px;
+  }
+  .overlay iframe {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .column img {
+    max-width: 468px;
+  }
+}
+
+.cross {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  font-size: 40px;
+  font-family: Arial;
+  padding-left: 12px;
+  line-height: 54px;
+  color: white;
+  cursor: pointer;
+  top: 12px;
+  right: 12px;
+}
